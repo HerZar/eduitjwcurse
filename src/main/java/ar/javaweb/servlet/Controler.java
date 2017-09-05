@@ -3,9 +3,11 @@ package ar.javaweb.servlet;
 import ar.javaweb.lab.Action;
 import ar.javaweb.lab.Borrar;
 import ar.javaweb.lab.Buscar;
+import ar.javaweb.lab.BuscarParaModificar;
 import ar.javaweb.lab.Insertar;
 import ar.javaweb.lab.Logoff;
 import ar.javaweb.lab.LoguinUser;
+import ar.javaweb.lab.Modificar;
 import ar.javaweb.lab.Registrar;
 
 import javax.servlet.ServletException;
@@ -40,5 +42,7 @@ public class Controler extends HttpServlet {
         actions.put("insertar", new Insertar());
         actions.put("search", new Buscar());
         actions.put("delete", new Borrar());
+        actions.put("search_for_update", new BuscarParaModificar());
+        actions.put("modificar", new Modificar());
     }
 }

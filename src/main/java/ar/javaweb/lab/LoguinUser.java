@@ -36,7 +36,7 @@ public class LoguinUser implements Action{
             }
         }
         req.getSession().setAttribute("msg", "Usuario y clave incorrecto.");
-                return "/eduitjwcurse/labclase3login.jsp";
+                return "/eduitjwcurse/labpages/labclase3login.jsp";
     }
     
     private boolean isNullOrEmpty(String s){

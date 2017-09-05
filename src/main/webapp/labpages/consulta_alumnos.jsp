@@ -38,8 +38,8 @@
                             <input type="hidden" name="id" value="<%=testing.get(i).getId()%>">
                             <input type="submit" value="Borrar">
                         </form>
-                        <form action="" method="post">
-                            <input type="hidden" name="id" value="<%=testing.get(i).getId()%>">
+                        <form action="ctr/search_for_update" method="post">
+                            <input type="hidden" name="buscarId" value="<%=testing.get(i).getId()%>">
                             <input type="submit" value="Modificar">
                         </form>
                     </td>
