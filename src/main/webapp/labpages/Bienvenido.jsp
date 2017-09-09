@@ -17,7 +17,7 @@
         <h1>Nombre: <%=usuario.getName()%>, <%=usuario.getLastName()%></h1>
         
         <form method="post" action="ctr/logoff">
-            <input type="submit" value="Logoff">
+            <input type="submit" value="Logoff"  class="btn btn-primary">
         </form>
         
     </body>

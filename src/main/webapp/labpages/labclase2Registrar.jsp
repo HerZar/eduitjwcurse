@@ -1,10 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-        <title>Laboratorio Clase2</title>
-    </head>
-    <body>
+<jsp:include page="Header.jsp"/>
+    <div class="container">
         <h1>Formulario de inscripción</h1><br>
         <hr/>
         <form method="post" action="ctr/registrar">
@@ -26,6 +22,5 @@
 
 
         </form>
-
-    </body>
-</html>
+    </div>
+<jsp:include page="Footer.jsp"/>

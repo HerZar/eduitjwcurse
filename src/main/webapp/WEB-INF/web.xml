@@ -13,5 +13,9 @@
     <servlet-name>ctr</servlet-name>
     <url-pattern>/labpages/ctr/*</url-pattern>
   </servlet-mapping>  
+  <servlet-mapping>
+    <servlet-name>ctr</servlet-name>
+    <url-pattern>/jquery/ctr/*</url-pattern>
+  </servlet-mapping>  
   
 </web-app>

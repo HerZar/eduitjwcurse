@@ -1,17 +1,14 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
-<html>
-    <head>
-        <meta http-equiv="Content-type" content="text/html" charset="UTF-8"
-    </head>
-    <body>
+<jsp:include page="Header.jsp"/>
+<div class="container">
         <h1>Login Usuario</h1>
         <hr/>
         
         <form method="post" action="ctr/login">
             Id usuario: <input type="text" name="idUser"><br><br>
             Clave usuario: <input type="password" name="pasUser"><br><br>            
-            <input type="submit" value="Acceder">
+            <input type="submit" value="Acceder" class="btn btn-primary">
             
         </form>
         <%String mensaje = (String)session.getAttribute("msg");
@@ -20,5 +17,5 @@
         <p> <%=session.getAttribute("msg")%> </p>
         <%}
             session.removeAttribute("msg");%>        
-    </body>
-</html>
+            </div>
+<jsp:include page="Footer.jsp"/>

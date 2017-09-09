@@ -7,23 +7,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-type" content="text/html charset=UTF-8">
         <title>JavaWEB</title>
-            	<style>
-			.cabecera {
-				background-color:gray;				
-			}
-		</style>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
   
 	</head>
 	<body>
-            <header class= "cabecera">
-			    <hr/>
-					<h1>Curso de Java Web: Servlets, JSP, JSTL, Struts & AJAX</h1><br>
-					<h3>Profesor: Raúl Geomar Peña.</h3><br><br>
-					
+            <header class="jumbotron text-center">
+					<h2>Curso de Java Web: Servlets, JSP, JSTL, Struts & AJAX</h2><br>
+					<h3>Profesor: Raúl Geomar Peña.</h3><br>
 				<hr/>
             </header>   
 

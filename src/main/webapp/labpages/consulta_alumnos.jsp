@@ -3,21 +3,21 @@
 <%@page import="java.util.List"%>
 <%@page import="ar.javaweb.entides.Alumno" %>
 <jsp:include page="Header.jsp"/>
-    <div> 
+    <div class="container">
         <br>
         <form action="ctr/search" method="post">
-            Id: <input type="number" name="buscarId">
-            Nombre: <input type="text" name="buscarNombre">
-            Apellido <input type="text" name="buscarApellido">
-            <input type="submit" value="Buscar">
+            <p> Id: <input type="number" name="buscarId"></p>
+            <p>Nombre: <input type="text" name="buscarNombre"></p>
+            <p>Apellido <input type="text" name="buscarApellido"></p>
+            <input type="submit" value="Buscar"  class="btn btn-primary">
         </form>
         <br>
         <form action="alta_modif.jsp" method="post" name="btnAgregar">
-            <input type="submit" value="Agregar">
+            <input type="submit" value="Agregar"  class="btn btn-primary">
         </form>
         
         <c:if test='${sessionScope.lista!=null}'>
-            <table border = 1>
+            <table class="table table-striped">
                 <tr>
                     <td>#</td>
                     <td>ID</td>
@@ -43,11 +43,11 @@
                     <td>
                         <form action="ctr/delete" method="post">
                             <input type="hidden" name="id" value="${alumno.id}">
-                            <input type="submit" value="Borrar">
+                            <input type="submit" value="Borrar"  class="btn btn-primary">
                         </form>
                         <form action="ctr/search_for_update" method="post">
                             <input type="hidden" name="buscarId" value="${alumno.id}">
-                            <input type="submit" value="Modificar">
+                            <input type="submit" value="Modificar"  class="btn btn-primary">
                         </form>
                     </td>
                 </tr>    

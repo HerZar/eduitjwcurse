@@ -9,6 +9,7 @@ import ar.javaweb.lab.Logoff;
 import ar.javaweb.lab.LoguinUser;
 import ar.javaweb.lab.Modificar;
 import ar.javaweb.lab.Registrar;
+import ar.javaweb.lab.ResponderAjax;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -29,7 +30,10 @@ public class Controler extends HttpServlet {
 
         Action a = actions.get(command);
         String redirect = a.executar(req,resp);
-        resp.sendRedirect(redirect);
+        if (redirect != null){
+            resp.sendRedirect(redirect);
+        }
+        
 
     }
 
@@ -44,5 +48,6 @@ public class Controler extends HttpServlet {
         actions.put("delete", new Borrar());
         actions.put("search_for_update", new BuscarParaModificar());
         actions.put("modificar", new Modificar());
+        actions.put("respajax", new ResponderAjax());
     }
 }

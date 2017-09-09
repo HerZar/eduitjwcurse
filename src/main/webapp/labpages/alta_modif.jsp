@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:include page="Header.jsp"/>
 <%@page import="ar.javaweb.entides.Alumno" %>
-    <div> 
+    <div class="container"> 
         <% 
             String aModifId = "";		
             String aModifName="";
@@ -20,7 +20,7 @@
 	    <input type="hidden" name = "id"  value="<%=aModifId%>">
             Nombre: <input type="text" name="name" value="<%=aModifName%>">
             Apellido <input type="text" name="lastName" value = "<%=aModifLastName%>">
-            <input type="submit" value="Aceptar">
+            <input type="submit" value="Aceptar"  class="btn btn-primary">
         </form>
         <br>
         <%if (session.getAttribute("aModif")!=null){ session.removeAttribute("aModif");
