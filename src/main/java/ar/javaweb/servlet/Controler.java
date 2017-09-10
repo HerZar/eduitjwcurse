@@ -10,6 +10,7 @@ import ar.javaweb.lab.LoguinUser;
 import ar.javaweb.lab.Modificar;
 import ar.javaweb.lab.Registrar;
 import ar.javaweb.lab.ResponderAjax;
+import ar.javaweb.lab.ResponderAjaxLista;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -49,5 +50,6 @@ public class Controler extends HttpServlet {
         actions.put("search_for_update", new BuscarParaModificar());
         actions.put("modificar", new Modificar());
         actions.put("respajax", new ResponderAjax());
+        actions.put("ajaxlista", new ResponderAjaxLista());
     }
 }

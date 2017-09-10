@@ -8,11 +8,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>AJAX JSP Servelts</title>
-        <script src="http://code.jquery.com/jquery-latest.js">
-
-        </script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+	
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
         <script>
                 $(document).ready(function() {
                         $('#submit').click(function(event) {
@@ -34,10 +39,12 @@
     <body>
             <h2>Ejemplo de AJAX con JSP y Servelts</h2>
             <form id="form1">
-                    Nombre:<input type="text" id="nombre" /> <br>
-                    Apellido: <input type="text" id="apellido" /> <br>
-                    Edad: <input type="text" id="edad" /> <br>
+                <div  class="col-sm-6">
+                    <p>Nombre:<input type="text" id="nombre" /> </p><br>
+                    <p>Apellido: <input type="text" id="apellido" /> </p><br>
+                    <p>Edad: <input type="text" id="edad" /> </p><br>
                     <input type="button" id="submit" value="Añadir" /> 
+                </div>
             </form>
             <br>
             <!-- 	En este div metemos el contenido de la tabla con AJAX -->

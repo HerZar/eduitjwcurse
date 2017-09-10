@@ -28,7 +28,7 @@
                                         <p><h4>Ejercicios y practicas sobre jquery</h4></p>
 					<a href="jquery/testchangeformat.jsp">Cambio de formato con jquery</a><br>
                                         <a href="jquery/listaPersonasAjax.jsp">lista personas ajax</a><br>
-					
+                                        <a href="jquery/listaPersonasAjax2.jsp">lista personas ajax 2</a><br>
 				</div>
 			</div>
 		</div>
