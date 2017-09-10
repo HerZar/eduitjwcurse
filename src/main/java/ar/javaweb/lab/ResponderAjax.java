@@ -23,7 +23,7 @@ public class ResponderAjax implements Action{
     public String executar(HttpServletRequest req, HttpServletResponse resp){
         
                 
-		resp.setContentType( "text/html; charset=iso-8859-1" );
+		resp.setContentType( "text/html; charset=UTF-8");
                 PrintWriter out;
                 try{
                     out = resp.getWriter();
